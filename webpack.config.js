@@ -39,7 +39,7 @@ module.exports = {
 				]
 			},
 			{
-				test: /\.png$/,
+				test: /\.png$/, //png formatli sekillerin loadingi
 				use: [
 					{loader: "url-loader"}
 				]
@@ -47,7 +47,7 @@ module.exports = {
 			{
 		        test: /.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
 		        use: [{
-		           	loader: 'url-loader', //url
+		           	loader: 'url-loader', //file-loaderi url loaderle deyisdim.
 		           	options: {
 		            name: '[name].[ext]',
 		            outputPath: 'fonts/',    // where the fonts will go

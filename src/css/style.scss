@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:300");
+@import url("https://fonts.googleapis.com/css?family=Raleway:100");
 
 $green: #17d9a3;
 $gray: #edeff1;
 
 *{
 	box-sizing: border-box;
-	font-family: 'Raleway';
+	font-family: 'Raleway', sans-serif;
 }
 
 a{
@@ -15,10 +15,10 @@ a{
 .top-text{
 	font-size: 50px;
 	letter-spacing: 2px;
-	line-height: 96px;
 	color: #576671;
 	font-weight: 300;
-	font-family: 'Raleway';
+	margin-bottom: 12px;
+	font-family: 'Raleway', sans-serif;
 }
 
 .content-text{
@@ -29,15 +29,27 @@ a{
 	font-family: "Proxima Nova", sans-serif;
 }
 
+.green-button{
+	width: 160px;
+	height: 43px;
+	border-radius: 23px;
+	background-color: $green;
+	border: 2px solid #ffffff;
+	color: #ffffff;
+	margin-top: 32px;
+	text-align: center;	
+	font-weight: bold;
+}
+
 #home{
 	background: url(../img/home.png), url(../img/mult.png);
 	background-blend-mode: multiply;
 	color: #ffffff;
-	font-weight: bold;
 	text-align: center;
 	.first{
 		padding-top: 40px;
 		clear: both;
+		font-weight: bold;
 		img{
 			object-fit: cover;
 		}
@@ -75,6 +87,7 @@ a{
 		margin-top: 95px;
 		i{
 			margin-top: 72px;
+			font-size: 50px;
 		}
 		.home-slides{
 			span{
@@ -87,8 +100,9 @@ a{
 				background-color: #00b6cb00;
 				border: 2px solid #ffffff;
 				margin: 0 auto;
-				margin-top: 32px;
 				padding-top: 7px;
+				font-weight: bold;
+				margin-top: 40px;
 			}
 		}
 		.circles{
@@ -117,6 +131,9 @@ a{
 		.down-icon{
 			margin-top: 100px !important;
     		margin-bottom: 25px;
+    		i{
+    			font-size: 25px;
+    		}
 		}
 	}
 }
@@ -125,7 +142,7 @@ a{
 	background-color: #ffffff;
 	text-align: center;
 	.first{
-	margin-top: 15px;
+		margin-top: 15px;
 		>div{
 			margin: 0 auto;
 		}
@@ -151,6 +168,7 @@ a{
 				color: #000000;
 				font-size: 25px;
 				letter-spacing: 1px;
+				font-weight: 900;
 				line-height: 96px;
 			}
 		}
@@ -159,14 +177,7 @@ a{
 		margin-top: 20px;
     	margin-bottom: 50px;
 		.button{
-			width: 160px;
-			height: 43px;
-			border-radius: 23px;
-			background-color: $green;
-			border: 2px solid #ffffff;
-			color: #ffffff;
 			margin: 0 auto;
-			margin-top: 32px;
 			padding-top: 7px;
 		}
 	}
@@ -174,17 +185,20 @@ a{
 
 #photo{
 	background-color: $gray;
-	>div{
-		margin-top: 20px;
+	.row>div{
+		margin-top: 30px;
 		.button{
-			width: 160px;
-			height: 43px;
-			border-radius: 23px;
-			background-color: $green;
-			border: 2px solid #ffffff;
-			color: #ffffff;
-			margin: 0 auto;
-			margin-top: 32px;
+    		margin-bottom: 60px;
+			padding-top: 7px;
+		}
+	}
+}
+
+#mac{
+	.row>div{
+		margin-top: 30px;
+		.button{
+    		margin-bottom: 60px;
 			padding-top: 7px;
 		}
 	}
@@ -196,8 +210,9 @@ a{
 	text-align: center;
 	i{
 		margin-top: 268px;
+		font-size: 50px;
 	}
-	>div{
+	>div>div{
 		.home-slides{
 		    margin-top: 90px;
 			.img{
@@ -223,7 +238,7 @@ a{
 	.circles{
 		display: inline-flex;
     	margin-top: 40px;
-    	margin-bottom: 42px;
+    	margin-bottom: 56px;
 		.circle{
 			width: 10px;
 			height: 10px;
@@ -240,6 +255,61 @@ a{
 			background-color: #ffffff;
 			margin: 0 auto;
 			margin-right: 5px;
+		}
+	}
+}
+
+#team{
+	background-color: #ffffff;
+	text-align: center;
+	.first{
+		margin-top: 15px;
+		display: inline-block;
+		>div{
+			margin: 0 auto;
+		}
+		.line-div{
+			padding-left: 46%;
+			.line{
+				width: 50px;
+				border-top: 1px solid $green;
+				margin: 15px 0px;
+			}
+		}
+	}
+	.second{
+		margin-top: 50px;
+		position: relative;
+		.back-img{
+			object-fit: cover;
+			width: 100%;
+    		height: 100%;
+		}
+		.front-img{
+			position: absolute;
+    		left: 20%;
+    		bottom: 0%;
+    		width: 20%;
+    		height: 50%;
+		}
+	}
+}
+
+#map{
+	.first{
+		margin-top: 45px;
+		padding-left: 120px;
+		.button{
+    		margin-bottom: 60px;
+			padding-top: 7px;
+		}
+	}
+	.second{
+		margin-top: 15px;
+		img{
+			object-fit: cover;
+			width: 100%;
+    		height: 100%;
 		}
 	}
 }

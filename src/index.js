@@ -11,11 +11,13 @@ jQuery(document).ready(function($) {
 // Home section
 	$("#home .search-icon i").click(function(event) {
 		if($(this).hasClass("fa-search")){
-			$(this).addClass('fa-close').removeClass('fa-search')
+			$(this).addClass('fa-close');
+		    $(this).removeClass('fa-search');
 			$("#home .search-input").css('display', 'block');
 		}
 		else{
-			$(this).addClass('fa-search').removeClass('fa-close')
+			$(this).addClass('fa-search');
+			$(this).removeClass('fa-close');
 			$("#home .search-input").css('display', 'none');
 		};
 	}); 
