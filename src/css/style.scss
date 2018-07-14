@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300");
+
+$green: #17d9a3;
+$gray: #edeff1;
+
+*{
+	box-sizing: border-box;
+	font-family: 'Raleway';
+}
+
+a{
+    text-decoration: none;
+}
+
+.top-text{
+	font-size: 50px;
+	letter-spacing: 2px;
+	line-height: 96px;
+	color: #576671;
+	font-weight: 300;
+	font-family: 'Raleway';
+}
+
+.content-text{
+	font-size: 18px;
+	letter-spacing: 0px;
+	line-height: 30px;
+	color: #87949e;
+	font-family: "Proxima Nova", sans-serif;
+}
+
+#home{
+	background: url(../img/home.png), url(../img/mult.png);
+	background-blend-mode: multiply;
+	color: #ffffff;
+	font-weight: bold;
+	text-align: center;
+	.first{
+		padding-top: 40px;
+		clear: both;
+		img{
+			object-fit: cover;
+		}
+		ul{
+			font-size: 14px;
+			letter-spacing: 0px;
+			line-height: 24px;
+			display: flex;
+			li{
+				margin-right: 15px;
+				a{
+					color: #ffffff;
+					&:hover{
+						text-decoration: none;
+						color: $green;
+					}
+					&:active{
+						color: $green;
+					}
+				}
+			}
+			.search-input{
+				display: none;
+				border: 1px solid #00ced1;
+				&:focus{
+					border: 1px solid #00ced1;
+				}
+				input{
+					padding-left: 3px;
+				}
+			}
+		}	
+	}
+	.second{
+		margin-top: 95px;
+		i{
+			margin-top: 72px;
+		}
+		.home-slides{
+			span{
+				font-weight: 900;
+			}
+			.button{
+				width: 160px;
+				height: 43px;
+				border-radius: 23px;
+				background-color: #00b6cb00;
+				border: 2px solid #ffffff;
+				margin: 0 auto;
+				margin-top: 32px;
+				padding-top: 7px;
+			}
+		}
+		.circles{
+			display: inline-flex;
+    		margin-top: 40px;
+			.circle{
+				width: 10px;
+				height: 10px;
+				border-radius: 5px;
+				background-color: #ffffff00;
+				border: 2px solid #ffffff;
+				margin: 0 auto;
+				margin-right: 5px;
+
+			}
+			.active-circle{
+				width: 10px;
+				height: 10px;
+				border-radius: 5px;
+				background-color: #ffffff;
+				margin: 0 auto;
+				margin-right: 5px;
+
+			}
+		}
+		.down-icon{
+			margin-top: 100px !important;
+    		margin-bottom: 25px;
+		}
+	}
+}
+
+#about-us{
+	background-color: #ffffff;
+	text-align: center;
+	.first{
+	margin-top: 15px;
+		>div{
+			margin: 0 auto;
+		}
+	}
+	.second{
+	margin-top: 70px;
+		.about-us-part{
+			.back-img{
+				width: 150px;
+				height: 150px;
+				border-radius: 91px;
+				color: #87939d;
+				border: 1px solid #87939d47;
+    			background-color: #87939d47;
+				margin: 0 auto;
+				padding: 42px;
+				&.green{
+					background-color: $green;
+					border: 1px solid $green;
+				}
+			}
+			.top_text{
+				color: #000000;
+				font-size: 25px;
+				letter-spacing: 1px;
+				line-height: 96px;
+			}
+		}
+	}
+	.third{
+		margin-top: 20px;
+    	margin-bottom: 50px;
+		.button{
+			width: 160px;
+			height: 43px;
+			border-radius: 23px;
+			background-color: $green;
+			border: 2px solid #ffffff;
+			color: #ffffff;
+			margin: 0 auto;
+			margin-top: 32px;
+			padding-top: 7px;
+		}
+	}
+}
+
+#photo{
+	background-color: $gray;
+	>div{
+		margin-top: 20px;
+		.button{
+			width: 160px;
+			height: 43px;
+			border-radius: 23px;
+			background-color: $green;
+			border: 2px solid #ffffff;
+			color: #ffffff;
+			margin: 0 auto;
+			margin-top: 32px;
+			padding-top: 7px;
+		}
+	}
+}
+
+#opinions{
+	background: url(../img/opinion.png);
+	color: #ffffff;
+	text-align: center;
+	i{
+		margin-top: 268px;
+	}
+	>div{
+		.home-slides{
+		    margin-top: 90px;
+			.img{
+				img{
+					width: 90px;
+					height: 90px;
+				    border-radius: 50%;
+				    padding: 1px;
+				}
+			}
+			.top_text{
+				font-size: 25px;
+				letter-spacing: 1px;
+				line-height: 96px;
+				margin-top: 45px;
+				span{
+					font-weight: bolder;
+					color: $green;
+				}
+			}
+		}
+	}
+	.circles{
+		display: inline-flex;
+    	margin-top: 40px;
+    	margin-bottom: 42px;
+		.circle{
+			width: 10px;
+			height: 10px;
+			border-radius: 5px;
+			background-color: #ffffff00;
+			border: 2px solid #ffffff;
+			margin: 0 auto;
+			margin-right: 5px;
+		}
+		.active-circle{
+			width: 10px;
+			height: 10px;
+			border-radius: 5px;
+			background-color: #ffffff;
+			margin: 0 auto;
+			margin-right: 5px;
+		}
+	}
+}
