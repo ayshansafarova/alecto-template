@@ -4,20 +4,36 @@
 	<title>Alecto</title>
 </head>
 <body>
-<!-- side icons, menu -->
-<div class="fixed-header invisible"></div>
 <!-- responsive variantda ul olan yerde 1 dene fixed bar ve ya da menu yaradacam -->
 <!-- jsde yazacam -->
 <!-- no-glutters clearfix breakpoint responsive sizing, spacers, auto-->
-
+<div class=".main">
+<div id="side">
+	<div class="dropdown">
+	  <button class="button">
+	  	<i class="fa fa-bars"></i>
+	  </button>
+	  <div class="list">
+	  	<input type="text" placeholder="Search">
+	    <a href="#home">HOME</a>
+	    <a href="#about-us">ABOUT</a>
+	    <a href="#pricing">WORK</a>
+	    <a href="#services">SERVICES</a>
+	    <a href="#opinions">BLOG</a>
+	  </div>
+	</div>
+	<div class="scroll-top" style="padding: 3px; font-weight: 800;">
+		UP
+	</div>
+</div>
 <!-- 1st section -->
 <section id="home">
 	<div class="container">
 		<div class="row first justify-content-between">
-			<div class="col-sm-2">
+			<div class="col-lg-2 col-12">
 				<img src="../src/icons/Alecto..png">
 			</div>
-			<div class="col-sm-6">
+			<div class="col-lg-6">
 				<div class="row float-right">
 					<ul class="header-list list-unstyled">
 						<li>
@@ -46,7 +62,7 @@
 			</div>
 		</div>
 		<div class="row second">
-			<div class="col-sm-1">
+			<div class="col-sm-1 icon">
 				<i class="fa fa-angle-left"></i>
 			</div>
 			<div class="col-sm-10">
@@ -58,16 +74,28 @@
 							<a href="">Learn more</a>
 						</div>
 					</div>
+					<div class="home-slide">
+						<div class="top-text text-white"><span>Alecto</span> is a very good template</div>
+						<div class="content-text text-white font-weight-normal">Nam varius accumsan elementum aliquam</div>
+						<div class="button">
+							<a href="">Learn more</a>
+						</div>
+					</div>
+					<div class="home-slide">
+						<div class="top-text text-white"><span>Alecto</span> is a beautiful template</div>
+						<div class="content-text text-white font-weight-normal">Nam varius accumsan elementum aliquam</div>
+						<div class="button">
+							<a href="">Learn more</a>
+						</div>
+					</div>
 				</div>
 				<div class="circles">
-					<div class="active-circle"></div>
-					<div class="circle"></div>
 				</div>
 				<div class="down-icon">
 					<i class="fa fa-angle-down"></i>
 				</div>
 			</div>
-			<div class="col-sm-1">
+			<div class="col-sm-1 icon">
 				<i class="fa fa-angle-right"></i>
 			</div>
 		</div>
@@ -86,7 +114,7 @@
 		<div class="row second">
 			<div class="col-12 col-sm-6 col-lg-3">
 				<div class="about-us-part">
-					<div class="back-img">
+					<div class="back-img first">
 						<img src="../src/icons/about-1.png">
 					</div>
 					<div class="top_text">Lorem ipsum
@@ -96,7 +124,7 @@
 			</div>
 			<div class="col-12 col-sm-6 col-lg-3">
 				<div class="about-us-part">
-					<div class="back-img green">
+					<div class="back-img green second">
 						<img src="../src/icons/about-2.png">
 					</div>
 					<div class="top_text">Lorem ipsum
@@ -106,7 +134,7 @@
 			</div>
 			<div class="col-12 col-sm-6 col-lg-3">
 				<div class="about-us-part">
-					<div class="back-img">
+					<div class="back-img third">
 						<img src="../src/icons/about-3.png">
 					</div>
 					<div class="top_text">Lorem ipsum
@@ -116,7 +144,7 @@
 			</div>
 			<div class="col-12 col-sm-6 col-lg-3">
 				<div class="about-us-part">
-					<div class="back-img">
+					<div class="back-img fourth">
 						<img src="../src/icons/about-4.png">
 					</div>
 					<div class="top_text">Lorem ipsum
@@ -136,7 +164,7 @@
 <section id="photo">
 	<div class="container">
 		<div class="row justify-content-end">
-			<div class="col-12 col-md-6">
+			<div class="col-12 col-md-8 col-lg-6">
 				<div class="top-text">Lorem ipsum</div>
 				<div class="content-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Quisque et feugiat risus, eu tristique felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</div>
 				<div class="button green-button">
@@ -150,7 +178,7 @@
 <section id="mac">
 	<div class="container">
 		<div class="row">
-			<div class="col-12 col-md-6">
+			<div class="col-12 col-md-8 col-lg-6">
 				<div class="top-text">Dolor sit amet</div>
 				<div class="content-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Quisque et feugiat risus, eu tristique felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</div>
 				<div class="button green-button">
@@ -178,10 +206,17 @@
 						</div>
 						<div class="content-text font-weight-normal">Adam Czajkowski, CEO&Founder at symu.co</div>
 					</div>
+					<div class="home-slide">
+						<div class="img">
+							<img src="../src/img/man.png">
+						</div>
+						<div class="text-white font-weight-normal top_text">
+							<span>Alecto</span> is a good template.
+						</div>
+						<div class="content-text font-weight-normal">David Jackman, HR at symu.co</div>
+					</div>
 				</div>
 				<div class="circles">
-					<div class="active-circle"></div>
-					<div class="circle"></div>
 				</div>
 			</div>
 			<div class="col-sm-1">
@@ -390,11 +425,11 @@
 <section id="footer">
 	<div class="container">
 		<div class="row">
-			<div class="col d-flex">
+			<div class="col-sm-6 col-12 d-flex">
 				<img src="../src/icons/footer-icon.png">
 				<div class="content-text">All Rights Reserved by Alecto</div>
 			</div>
-			<div class="col">
+			<div class="col-sm-6 col-12">
 					<ul class="content-text list-unstyled">
 						<li>
 							<a href="#home">Home</a>
@@ -416,6 +451,7 @@
 		</div>
 	</div>
 </section>
+</div>
 <script src="./bundle.js"></script> 
 <!-- where we bundle things in our index.js -->
 </body>
