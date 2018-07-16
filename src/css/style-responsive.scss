@@ -1,4 +1,4 @@
-@media (max-width:992){
+@media screen and (min-width: 768px) and (max-width: 992px){
 
 .top-text{
 	font-size: 35px;
@@ -19,6 +19,9 @@
 
 #home{
 	.first{
+	.header-list{
+	display:none;
+	}
 	}
 	.second{
 		margin-top: 95px;
@@ -27,6 +30,7 @@
 			font-size: 50px;
 		}
 		.home-slides{
+			margin-top: 70px;
 			span{
 				font-weight: 900;
 			}
@@ -38,8 +42,11 @@
 		}
 		.circles{
 			display: inline-flex;
-    		margin-top: 55px;
+    		margin-top: 60px;
 			}
+		}
+		.down-icon{
+		    margin-top: 50px !important;
 		}
 	}
 
@@ -133,9 +140,15 @@
 	}
 }
 
+#side {
+	.dropdown{
+	display: block;
+	}
 }
 
-@media (max-width: 768){
+}
+
+@media (min-width: 576px) and (max-width: 768px){
 
 #side{
 	.dropdown{
@@ -144,14 +157,14 @@
 }
 
 .top-text{
-	font-size: 35px;
+	font-size: 20px;
 	letter-spacing: 2px;
 	margin-bottom: 12px;
 }
 
 .content-text{
 	font-size: 16px;
-	line-height: 25px;
+	line-height: 22px;
 }
 
 
@@ -190,7 +203,7 @@
 			}
 		}
 		.down-icon{
-			margin-top: 15px !important;
+			margin-top: 30px !important;
 		}
 }
 
@@ -210,9 +223,9 @@
 				}
 			}
 			.top_text{
-				font-size: 23px;
+				font-size: 20px;
 				letter-spacing: 1px;
-				line-height: 50px;
+				line-height: 30px;
 				margin-top: 40px;
 			}
 		}
@@ -306,13 +319,16 @@
 	}
 }
 
+#footer{
+	height: 350px;
+}
 
 }
 
 @media (max-width:576px){
 
 .top-text{
-	font-size: 24px;
+	font-size: 20px;
 	letter-spacing: 2px;
 	margin-bottom: 12px;
 }
@@ -333,7 +349,7 @@
 #map{
 	.first{
 		margin-top: 45px;
-		padding-left: 0px;
+		padding-left: 13px;
 		.button{
     		margin-bottom: 60px;
 			padding-top: 7px;
@@ -350,6 +366,9 @@
 		    font-size: 14px;
 		    width: 120px;
 		}
+		.down-icon{
+		    margin-top: 18px !important;
+		}
 	}
 }
 
@@ -361,6 +380,7 @@
 	i{
 		display: none;
 	}
+
 }
 
 }
