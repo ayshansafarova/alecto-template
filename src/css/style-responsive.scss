@@ -380,7 +380,24 @@
 	i{
 		display: none;
 	}
+	.top_text{
+	    font-size: 20px;
+	    line-height: 30px;
+	    margin-top: 45px;
+	}
 
+}
+
+#about-us{
+	.top_text{
+		font-size: 20px;
+		line-height: 50px;
+	}
+	.back-img{
+	    width: 100px;
+    	height: 100px;
+    	padding: 20px;
+	}
 }
 
 }
