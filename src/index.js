@@ -117,6 +117,10 @@ jQuery(document).ready(function($) {
 		$("#side .dropdown").css('display', 'block');
 		$("#home .header-list").css('display', 'none');
 	}
+	else if (window.matchMedia("(min-width: 1200px)").matches) {
+		$("#home").css('background-repeat', 'round');
+		// $("#home .header-list").css('display', 'none');
+	}
 
 //that is more correct way i think. but it doesnt work
 

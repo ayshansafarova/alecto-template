@@ -380,7 +380,7 @@
 	i{
 		display: none;
 	}
-	.top_text{
+	> div > div .home-slides .top_text{
 	    font-size: 20px;
 	    line-height: 30px;
 	    margin-top: 45px;
@@ -389,6 +389,9 @@
 }
 
 #about-us{
+	.second{
+		margin-top: 50px;
+	}
 	.top_text{
 		font-size: 20px;
 		line-height: 50px;
